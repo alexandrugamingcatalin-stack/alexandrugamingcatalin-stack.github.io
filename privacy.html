@@ -34,7 +34,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Effective date: 9 September 2026</p>
+<p class="meta">Effective date: 14 October 2026</p>
 
 <p>This privacy policy applies to the <strong>SideWaysSaga 2025</strong> mobile application
 (package <code>com.SANGames.SideWaysSaga2025</code>), together with any related services
@@ -55,11 +55,13 @@ please contact the Data Controller using the details above.</p>
 
 <h2>What information does the Application collect?</h2>
 
-<p><strong>Information you provide directly.</strong> When you create an account and sign in,
-the Application collects:</p>
+<p><strong>Information you provide directly.</strong> You can create an account and sign in in one
+of two ways: with an email address and password, or with Google Play Games. Depending on the
+method you choose, the Application collects:</p>
 <ul>
-  <li><strong>Email address</strong> — used to create and authenticate your account, and to allow password resets.</li>
-  <li><strong>Password</strong> — your password is verified by Firebase Authentication and is never sent to the Service Provider's own servers. If you turn on <em>Stay signed in</em>, your email address and password are saved on your device so that the Application can sign you in automatically the next time you open it. Depending on your device settings, application data of this kind may also be included in your device's system backup. You can remove the saved credentials at any time by turning <em>Stay signed in</em> off, or by signing out.</li>
+  <li><strong>Email address</strong> (email accounts only) — used to create and authenticate your account, and to allow password resets.</li>
+  <li><strong>Google Play Games profile</strong> (Play Games accounts only) — if you choose to sign in with Google Play Games, Google provides the Application, through Firebase Authentication, with your Play Games player ID and your Play Games player name. The player ID is used to identify your account; the player name is shown to you so that you can confirm which profile you are signing in with. The Application does not receive your Google account password, and it does not request your email address from Google Play Games.</li>
+  <li><strong>Password</strong> (email accounts only) — your password is verified by Firebase Authentication and is never sent to the Service Provider's own servers. If you turn on <em>Stay signed in</em>, your email address and password are saved on your device so that the Application can sign you in automatically the next time you open it. Depending on your device settings, application data of this kind may also be included in your device's system backup. You can remove the saved credentials at any time by turning <em>Stay signed in</em> off, or by signing out.</li>
   <li><strong>Username</strong> — chosen by you. Please note that your username is <em>public</em>: it is displayed to other players in the in-game leaderboard and in online multiplayer sessions.</li>
 </ul>
 
@@ -74,12 +76,14 @@ the Application collects:</p>
 <ul>
   <li><strong>Advertising ID</strong> — a resettable identifier provided by your device, used by Google AdMob to serve and measure advertisements.</li>
   <li><strong>Device and connection information</strong> — such as device model, operating system version, language and IP address, collected by the third-party services listed below in order to deliver ads, run online multiplayer and diagnose technical problems.</li>
+  <li><strong>App integrity information</strong> — when the Application connects to its online services, the Google Play Integrity API (through Firebase App Check) confirms that the request comes from a genuine, unmodified copy of the Application installed from Google Play, running on a genuine Android device. This check produces a short-lived token and is used only for security and to prevent cheating and abuse.</li>
 </ul>
 
 <p>The Application does <strong>not</strong> collect your precise or approximate geographic
-location, your real name, your date of birth, your gender, your phone number or your
-contacts. It requests only the <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>
-permissions.</p>
+location, your date of birth, your gender, your phone number or your contacts, and it does
+not ask for your real name (if you sign in with Google Play Games, your player name is the
+name you have set in your Play Games profile). It requests only the <code>INTERNET</code>
+and <code>ACCESS_NETWORK_STATE</code> permissions.</p>
 
 <h2>How is your information used?</h2>
 <ul>
@@ -88,13 +92,14 @@ permissions.</p>
   <li>To operate public leaderboards and online multiplayer sessions.</li>
   <li>To display advertisements, which fund the development of the Application.</li>
   <li>To detect and fix technical problems and prevent abuse.</li>
+  <li>To protect the Application's online services, your progress and the leaderboards against modified or unauthorised copies of the Application.</li>
 </ul>
 
 <h2>Legal bases for processing (GDPR)</h2>
 <ul>
   <li><strong>Contract</strong> — account creation, authentication, saving your progress, leaderboards and multiplayer. Without this data the Application cannot provide these features.</li>
   <li><strong>Consent</strong> — personalised advertising and the associated use of your Advertising ID. You are asked for consent when you first open the Application, and you may change or withdraw it at any time from the in-game settings, under "Privacy options".</li>
-  <li><strong>Legitimate interests</strong> — security, abuse prevention and diagnosing technical faults.</li>
+  <li><strong>Legitimate interests</strong> — security, abuse prevention (including the app integrity check described above) and diagnosing technical faults.</li>
 </ul>
 
 <h2>Advertising</h2>
@@ -109,9 +114,10 @@ advertisements, but they will not be personalised.</p>
 <p>The Application uses the following third-party services, which have their own privacy policies:</p>
 <ul>
   <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+  <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Games services</a> (Google LLC) — used, if you choose it, to sign in with your Play Games profile.</li>
   <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Google AdMob</a></li>
   <li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener noreferrer">Unity</a></li>
-  <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Authentication, Cloud Firestore and Cloud Storage</a> (Google LLC) — used to create and authenticate your account and to store your game progress, username and leaderboard score.</li>
+  <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Authentication, Cloud Firestore, Cloud Storage and App Check</a> (Google LLC) — used to create and authenticate your account, to store your game progress, username and leaderboard score, and to verify that requests come from a genuine copy of the Application (with the Google Play Integrity API).</li>
   <li><a href="https://www.photonengine.com/en-US/Photon/modules/Legal/Privacy" target="_blank" rel="noopener noreferrer">Photon Engine</a> (Exit Games GmbH) — used for online multiplayer sessions.</li>
 </ul>
 <p>Some of these providers are located outside the European Economic Area. Where personal
@@ -131,7 +137,10 @@ permanently removes your account, your saved progress, your username reservation
 leaderboard entry.</p>
 <p>Alternatively, you may request deletion by writing to
 <a href="mailto:sasorigx123@gmail.com">sasorigx123@gmail.com</a> from the email address
-associated with your account.</p>
+associated with your account or, for accounts created with Google Play Games, by including
+your in-game username in your message.</p>
+<p>Deleting your account in the Application does not delete your Google Play Games profile,
+which is managed by Google under its own privacy policy.</p>
 
 <h2>Your rights</h2>
 <p>If you are in the European Economic Area or the United Kingdom, you have the right to
@@ -169,7 +178,7 @@ contact the Service Provider at
 <a href="mailto:sasorigx123@gmail.com">sasorigx123@gmail.com</a>.</p>
 
 <hr>
-<footer>SideWaysSaga 2025 — SANGames. Last updated 9 September 2026.</footer>
+<footer>SideWaysSaga 2025 — SANGames. Last updated 14 October 2026.</footer>
 
 </body>
 </html>
